@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab");
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  min-height: 360px; }
+  header .eye {
+    font-size: 32px;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 0; }
+    header .eye a {
+      text-decoration: none;
+      color: #80542F; }
+      header .eye a:hover {
+        border-bottom: 2px solid #80542F;
+        color: rgba(128, 84, 47, 0.8); }
+  header .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: beige;
+    width: 100%; }
+    header .hero .avatar {
+      background: url("/assets/images/summer.jpg") no-repeat center/cover;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      border: 2px solid #D1BC8A;
+      box-shadow: 0 0 15px rgba(4, 4, 4, 0.5);
+      margin-right: 40px; }
+    header .hero .title {
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+      max-width: 80%; }
+      header .hero .title .short {
+        font-size: 42px;
+        font-family: "Roboto Slab", serif;
+        margin-bottom: 0; }
+        header .hero .title .short .full {
+          float: right;
+          font-family: Roboto, serif;
+          font-size: 20px;
+          font-weight: 100; }
+
+main.index {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  align-self: center; }
+  @media screen and (min-width: 960px) {
+    main.index .note {
+      width: 45%; } }
+  main.index .note p {
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+    padding: 10px 30px; }
+  @media screen and (min-width: 960px) {
+    main.index .mini-gallery {
+      width: 45%; } }
+  main.index .mini-gallery ul {
+    margin: 0;
+    padding: 0;
+    column-count: 3;
+    column-gap: 0; }
+  main.index .mini-gallery li {
+    list-style: none;
+    line-height: 0; }
+  main.index .mini-gallery img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover; }
+
+.menu-top ul li {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  margin-right: 15px;
+  position: relative; }
+  .menu-top ul li:hover > .submenu {
+    visibility: visible; }
+  .menu-top ul li a {
+    text-decoration: none;
+    color: #80542F; }
+    .menu-top ul li a:hover {
+      border-bottom: 2px solid #80542F;
+      color: rgba(128, 84, 47, 0.8); }
+
+.menu-top .submenu {
+  position: absolute;
+  visibility: hidden;
+  background: yellow;
+  width: auto;
+  padding: 3px; }
+  .menu-top .submenu li {
+    margin: 0; }
+
+.active {
+  font-size: 30px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #80542F;
+  color: #D1BC8A; }
+  footer nav.menu-bottom ul {
+    list-style: none;
+    padding: 0; }
+    footer nav.menu-bottom ul li {
+      display: block;
+      font-size: 80%; }
+      footer nav.menu-bottom ul li a {
+        text-decoration: none;
+        color: #D1BC8A; }
+    footer nav.menu-bottom ul .submenu {
+      display: none; }
+  footer .social ul {
+    padding: 0;
+    list-style: none; }
+    footer .social ul li {
+      display: inline-block;
+      height: 67px;
+      width: 67px;
+      margin-right: 15px; }
+      footer .social ul li:nth-child(1) {
+        background: url("/assets/images/icons/youtube.svg"); }
+      footer .social ul li:nth-child(2) {
+        background: url("/assets/images/icons/facebook.svg"); }
+      footer .social ul li:nth-child(3) {
+        background: url("/assets/images/icons/twitter.svg"); }
+      footer .social ul li:nth-child(4) {
+        background: url("/assets/images/icons/google.svg"); }
+      footer .social ul li a {
+        display: block;
+        height: 100%; }
+
+html {
+  background: #D1BC8A;
+  box-sizing: border-box;
+  color: #80542F;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex-grow: 1; }
