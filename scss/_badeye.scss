@@ -1,0 +1,88 @@
+.hide {
+  display: none  !important;
+ }
+
+.black {
+  background: black;
+  color: white;
+}
+
+label.label {
+
+  font-size: 35px;
+  margin-right: 10px;
+
+}
+.tobadeye {
+  background: url("/assets/images/blind.png") no-repeat center/cover;
+  background-size: 250px 60px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  width:250px;
+  height: 60px;
+}
+
+.badeye {
+  display: none;
+  //position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+.visible {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.unvisible {
+  display: none;
+}
+
+.badeye .btn {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 30px;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+div.badeye div.h-s button{
+  width: 175px;
+  cursor: pointer;
+}
+
+div.badeye div.w-b button {
+  width: 156px;
+  cursor: pointer;
+}
+
+#font_normal {
+  background: url("/assets/images/small_font.png") no-repeat center;
+  padding: 15px 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+#font_middle {
+  background: url("/assets/images/middle_font.png") no-repeat center;
+  padding: 15px 25px;
+  width: 54px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#font_big {
+  background: url("/assets/images/big_font.png") no-repeat center;
+  padding: 15px 25px;
+  width: 78px;
+  height: 74px;
+  cursor: pointer;
+}

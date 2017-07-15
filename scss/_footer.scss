@@ -4,6 +4,7 @@ footer {
   align-items: center;
   background: $brown;
   color: $beige;
+  padding: 25px 15px;
 
   nav.menu-bottom ul {
     list-style: none;
@@ -12,10 +13,12 @@ footer {
     li {
       display: block;
       font-size: 80%;
+      margin-bottom: 3px;
 
       a {
         text-decoration: none;
         color: $beige;
+        font-size: 15px;
       }
     }
     .submenu {
@@ -36,19 +39,23 @@ footer {
       margin-right: 15px;
 
       &:nth-child(1) {
-        background: url("/assets/images/icons/youtube.svg")
+        background-color: $beige;
+        -webkit-mask: url("/assets/images/icons/youtube.svg")
       }
 
       &:nth-child(2) {
-        background: url("/assets/images/icons/facebook.svg")
+        background-color: $beige;
+        -webkit-mask: url("/assets/images/icons/facebook.svg")
       }
 
       &:nth-child(3) {
-        background: url("/assets/images/icons/twitter.svg")
+        background-color: $beige;
+        -webkit-mask: url("/assets/images/icons/twitter.svg")
       }
 
       &:nth-child(4) {
-        background: url("/assets/images/icons/google.svg")
+        background-color: $beige;
+        -webkit-mask: url("/assets/images/icons/google.svg")
       }
 
       a {
@@ -57,5 +64,10 @@ footer {
       }
 
     }
+  }
+
+  .logo {
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
   }
 }

@@ -3,8 +3,10 @@
     display: inline-block;
     font-family: "Roboto Slab", serif;
     font-size: 24px;
-    margin-right: 15px;
+    //margin-right: 5px;
     position: relative;
+
+
 
     &:hover > .submenu{
       visibility: visible;
@@ -13,28 +15,41 @@
     a {
       text-decoration: none;
       color: $brown;
+      padding: 3px 8px;
 
       &:hover {
-        border-bottom: 2px solid $brown;
-        color: rgba($brown, .8)
+        color: rgba($beige, .8);
+        background: $brown;
       }
+
     }
+
+
   }
+
 
 
   .submenu {
     position: absolute;
     visibility: hidden;
-    background: yellow;
+    background: $beige;
     width: auto;
     padding: 3px;
 
+    @media screen and (max-width: 1100px) {
+
+      display: none;
+    }
+
+
     li {
       margin: 0;
+      font-size: 18px;
+     // display: block;
     }
   }
 }
 
 .active {
-  font-size: 30px;
+  border: 0.5px solid $brown;
 }

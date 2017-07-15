@@ -5,6 +5,8 @@ menu:
    name: Новости
  - url: /gallery/
    name: Галлерея
+ - url: /tests/
+   name: Тесты
  - url: /contacts/
    name: Контакты
  - url: /information/

@@ -4,8 +4,8 @@ poster:
     url: http://lorempixel.com/300/200
     name: awesom alt text
 tags: [foo,bar, учёба, спорт, успехи, концерт, танцы, развлечения]
-title:  "Welcome to Jekyll!"
-date:   2017-06-08 18:39:41 +0300
+title:  "Welcome to another post!"
+date:   2017-06-28 09:39:41 +0300
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -4,12 +4,14 @@ header {
     align-items: center;
     align-content: space-between;
     flex-wrap: wrap;
-    min-height: 360px;   
+    //min-height: 360px;
     //background: url("/assets/images/header-bg.jpg") no-repeat 50% 95%/cover;
+    //border: 2px solid gold;
+    padding-bottom: 20px;
 
 
   .eye {
-    font-size: 32px;
+    font-size: 24px;
     font-family: "Roboto Slab", serif;
     margin-bottom: 0;
 
@@ -18,10 +20,17 @@ header {
       color: $brown;
 
       &:hover {
-        border-bottom: 2px solid $brown;
-        color: rgba($brown, .8)
+        //border-bottom: 2px solid $brown;
+        color: rgba($beige, .8);
+        background: $brown;
       }
     }
+  }
+
+  .school-name {
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+
   }
 
 
@@ -34,6 +43,7 @@ header {
         margin-bottom: 40px;
         color:beige;
         width: 100%;
+        padding-top: 10px;
 
                 .avatar {
                 background: url("/assets/images/summer.jpg") no-repeat center/cover;

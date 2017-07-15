@@ -2,11 +2,45 @@
 permalink: news/
 layout: default
 ---
-<main>
-<h1>Новости</h1>
+<main class="news">
+    <section class="post-list">
+
     {% for post in site.posts %}
+        <div class="post">
 
-    <a href="{{post.url}}">{{post.title}}</a>
 
+    <img src="{{post.poster.url}}" alt="{{post.poster.name}}" class="poster">
+
+    <div class="post-preview">
+
+    <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+
+        {% for tag in post.tags %}
+
+            <p class="meta">{{tag}}</p>
+
+        {% endfor %}
+        <p class="date">{{post.date | date: "%D"}}</p>
+        <p class="post-excerpt">{{post.excerpt}}</p>
+
+    </div>
+    </div>
     {% endfor %}
+    </section>
+
+    <aside class="widgets">
+        <section class="tags">
+            <h3>Tags</h3>
+            <div class="tag-list">
+
+                {% for tag_glob in site.tags %}
+
+                   <div class="tag-item">{{ tag_glob[0] }}</div>
+
+                {% endfor %}
+
+            </div>
+        </section>
+    </aside>
+
 </main>

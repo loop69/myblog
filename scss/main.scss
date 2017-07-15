@@ -1,12 +1,11 @@
-@import 'normalize', 'vars', 'header', 'index', 'nav', 'footer';
+@import 'normalize', 'vars', 'header', 'index', 'nav', 'footer', 'news', 'badeye', 'choice';
 
 html {
     background: $beige;
     box-sizing: border-box;
     color: $brown;
     height: 100%;
-    margin: 0;
-    padding: 0;
+
 }
 
 body {
