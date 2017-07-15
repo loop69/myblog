@@ -2,41 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a20e5ae3-1626-40ba-a08b-46c764665fb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/badeye.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/hero.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/badeye.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/who_you_are.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_badeye.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_choice.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_news.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scss/nav.scss" afterPath="$PROJECT_DIR$/scss/_nav.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-06-25-welcome-to-jekyll.markdown" afterPath="$PROJECT_DIR$/_posts/2017-06-25-welcome-to-jekyll.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/assets/js/who_you_are.js" afterPath="$PROJECT_DIR$/_site/assets/js/who_you_are.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/assets/styles/main.css" afterPath="$PROJECT_DIR$/_site/assets/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tests/index.html" afterPath="$PROJECT_DIR$/_site/tests/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/main.css" afterPath="$PROJECT_DIR$/assets/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.html" afterPath="$PROJECT_DIR$/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery.html" afterPath="$PROJECT_DIR$/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information.html" afterPath="$PROJECT_DIR$/information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_footer.scss" afterPath="$PROJECT_DIR$/scss/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_header.scss" afterPath="$PROJECT_DIR$/scss/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_index.scss" afterPath="$PROJECT_DIR$/scss/_index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_normalize.scss" afterPath="$PROJECT_DIR$/scss/_normalize.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_choice.scss" afterPath="$PROJECT_DIR$/scss/_choice.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,8 +54,18 @@
       <file leaf-file-name="_choice.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_choice.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state relative-caret-position="460">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -164,7 +144,6 @@
       <list>
         <option value="$PROJECT_DIR$/_posts/2017-06-08-welcome-to-jekyll.markdown" />
         <option value="$PROJECT_DIR$/_includes/nav.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scss/_normalize.scss" />
         <option value="$PROJECT_DIR$/assets/js/uvhpv-full.min.js" />
         <option value="$PROJECT_DIR$/_posts/2017-06-25-welcome-to-jekyll.markdown" />
@@ -194,6 +173,7 @@
         <option value="$PROJECT_DIR$/scss/main.scss" />
         <option value="$PROJECT_DIR$/tests.html" />
         <option value="$PROJECT_DIR$/assets/js/who_you_are.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scss/_choice.scss" />
       </list>
     </option>
@@ -397,12 +377,12 @@
       <workItem from="1500098468536" duration="1028000" />
       <workItem from="1500110770164" duration="1728000" />
       <workItem from="1500121104072" duration="2055000" />
-      <workItem from="1500132262347" duration="9277000" />
+      <workItem from="1500132262347" duration="9570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113922000" />
+    <option name="totallyTimeSpent" value="114215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,13 +544,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/index.scss" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-06-08-welcome-to-jekyll.markdown" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_normalize.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -789,10 +762,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_choice.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        <state relative-caret-position="460">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
