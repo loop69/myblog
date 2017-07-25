@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: news
 poster:
     url: http://lorempixel.com/300/200
     name: awesom alt text
