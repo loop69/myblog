@@ -5,7 +5,9 @@
 
     <div class="tobadeye" id="tobadeye" onclick="Badeye()"></div>
    <!-- <div class="eye"><a href="#">Версия для слабовидящих</a> </div>-->
-       {% include hero.html %}
+      {% if page.url == '/' %}
+        {% include hero.html %}
+      {% endif %}
 
 
 </header>

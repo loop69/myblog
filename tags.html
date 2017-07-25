@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /tags/
+---
+
+<main class="tags">
+    <h2>Новости по рубрикам</h2>
+    {% for tag in site.tags %}
+    <div>
+    {% assign _tag = tag | first %}
+    <h3 id="{{_tag | slugify}}">{{_tag}}</h3>
+    <ul>
+        {% for post in site.tags[_tag] %}
+        <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+    </div>
+   {% endfor %}
+</main>

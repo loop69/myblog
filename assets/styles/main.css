@@ -307,10 +307,19 @@ div.badeye div.w-b button {
   font-size: x-large;
   min-height: 30px; }
 
-main .article {
+main.article {
   margin: 15px auto;
   width: 95%;
   max-width: 960px; }
+  main.article img {
+    max-width: 100%; }
+
+main.tags {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px; }
+  main.tags div {
+    margin: 10px auto; }
 
 html {
   background: #D1BC8A;

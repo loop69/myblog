@@ -1,5 +1,9 @@
-main .article {
+main.article {
   margin:15px auto;
   width: 95%;
   max-width: 960px;
+
+  img {
+    max-width: 100%;
+  }
 }
