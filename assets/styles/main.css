@@ -82,6 +82,25 @@ main {
     height: 130px;
     object-fit: cover; }
 
+.back_colorbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; }
+
+.big_img_colorbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none; }
+
 .menu-top ul li {
   display: inline-block;
   font-family: "Roboto Slab", serif;

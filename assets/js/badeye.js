@@ -14,7 +14,7 @@ function init() {
         let black = localStorage.getItem("black");
         let hide = localStorage.getItem("hide");
 
-        let font_size = document.querySelectorAll("nav, div, p, footer");
+        let font_size = document.querySelectorAll("nav, li, div, p, footer");
 
         //console.log(elle); console.log(black); console.log(size); console.log(hide);
 
