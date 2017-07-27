@@ -1,3 +1,18 @@
+let endDate = new Date(2017,6,31,7,0); // получаем дату истечения таймера
+console.log(endDate);
+
+let currentDate = new Date(); // получаем текущую дату
+
+console.log(currentDate);
+
+let seconds = Math.floor((endDate-currentDate) / 1000); // определяем количество секунд до истечения таймера
+
+console.log(seconds);
+
+let t1 = new Timer(150000);
+
+t1.start();
+
 function Timer(time){
     let timer;
     //console.log('all sec',time);
@@ -101,22 +116,3 @@ function Timer(time){
 
 
 }
-
-window.onload = function(){
-
-    let endDate = new Date(2017,6,31,7,0); // получаем дату истечения таймера
-    console.log(endDate);
-
-    let currentDate = new Date(); // получаем текущую дату
-
-    console.log(currentDate);
-
-    let seconds = Math.floor((endDate-currentDate) / 1000); // определяем количество секунд до истечения таймера
-
-    console.log(seconds);
-
-    let t1 = new Timer(150000);
-
-    t1.start();
-
-};
