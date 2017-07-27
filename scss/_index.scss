@@ -19,9 +19,9 @@ main{
     
     .mini-gallery {
 
-        @media screen and (min-width: 960px) {
+       /* @media screen and (min-width: 960px) {
             width: 45%;
-        }
+        }*/
 
         ul {
             margin: 0;
@@ -50,6 +50,7 @@ main{
   bottom: 0;
   margin: auto;
   background: rgba(0, 0, 0, .5);
+  z-index: 9;
   display: none;
 }
 
@@ -61,4 +62,5 @@ main{
   bottom: 0;
   margin: auto;
   display: none;
+  z-index: 10;
 }

@@ -220,3 +220,28 @@ function backColor() {
     body.classList.toggle('black');
     footer.classList.toggle('black');
 }
+
+
+//получаем эелементы кнопок и вешаем обработчики onclick
+
+    let tobad = document.getElementById("tobadeye");
+        tobad.addEventListener("click", Badeye);
+
+
+let fontNormal = document.getElementById("font_normal");
+fontNormal.addEventListener("click", Normal);
+
+    let fontMiddle = document.getElementById("font_middle");
+fontMiddle.addEventListener("click", Middle);
+
+    let fontBig = document.getElementById("font_big");
+fontBig.addEventListener("click", Big);
+
+    let fonColor = document.getElementById("fon-color");
+fonColor.addEventListener("click", Black);
+
+    let hideImg = document.getElementById("hide-img");
+hideImg.addEventListener("click", Hide);
+
+    let back = document.getElementById("back");
+back.addEventListener("click", Back);

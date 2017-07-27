@@ -1,0 +1,49 @@
+.slider-jq {
+    margin: 20% auto;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #D1BC8A;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(4,4,4,.6);
+}
+
+.slider-jq img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+
+
+.slider-jq img:first-child{
+    display: block;
+}
+
+.button > div {
+    z-index: 20;
+    cursor: pointer;
+    width: 37px;
+    height: 23px;
+}
+
+.button_back {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    width: 37px;
+    height: 25px;
+    background: url("/assets/images/arrows_small.png") no-repeat 0 100%;
+}
+
+.button_forward {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    width: 37px;
+    height: 25px;
+    background: url("/assets/images/arrows_small.png")  no-repeat 100% 0%;
+}

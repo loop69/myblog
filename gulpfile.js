@@ -7,7 +7,8 @@ const sass = require('gulp-sass');
 const path = {
     html: ['*.html', '_includes/*.html', '_layouts/*.html'],
     scss: 'scss/**/*.scss',
-    js: 'assets/js/*.js'
+    js: 'assets/js/*.js',
+    css: 'assets/styles/*.css'
 }
 
 // 1. Выполнить команду jekyll build
@@ -60,6 +61,7 @@ gulp.task('watch', function() {
     gulp.watch( path.html, ['jekyll:rebuild']);
     gulp.watch( path.scss, ['sass']);
     gulp.watch( path.js, ['jekyll:rebuild']);
+    gulp.watch( path.css, ['jekyll:rebuild']);
 });
 
 gulp.task('serve', ['browser-sync', 'watch']);

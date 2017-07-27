@@ -1,0 +1,50 @@
+.slider {
+    width: 600px;
+    height: 450px;
+    border: 10px solid #D1BC8A;
+    box-shadow: 0 0 8px rgba(4,4,4, .6);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+
+
+.slider img:first-child{
+    opacity: 1;
+}
+
+.button > div {
+    /* z-index: 20; */
+    cursor: pointer;
+    width: 37px;
+    height: 23px;
+}
+
+.button_back {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    width: 37px;
+    height: 25px;
+    background: url("/assets/images/arrows_small.png") no-repeat 0 100%;
+}
+
+.button_forward {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    width: 37px;
+    height: 25px;
+    background: url("/assets/images/arrows_small.png")  no-repeat 100% 0%;
+}
