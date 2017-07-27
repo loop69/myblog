@@ -3,6 +3,11 @@ main.article {
   width: 95%;
   max-width: 960px;
 
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
   img {
     max-width: 100%;
   }

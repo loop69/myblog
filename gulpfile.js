@@ -8,7 +8,7 @@ const path = {
     html: ['*.html', '_includes/*.html', '_layouts/*.html'],
     scss: 'scss/**/*.scss',
     js: 'assets/js/*.js',
-    css: 'assets/styles/*.css'
+    css: 'assets/styles/*.css',
 }
 
 // 1. Выполнить команду jekyll build

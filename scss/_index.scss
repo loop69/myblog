@@ -21,10 +21,10 @@ main {
     }
 
   }
-  section.pict {
+  .pict {
     @media screen and (min-width: 960px) {
-    width: 44%;
-  }
+      width: 44%;
+    }
     .mini-gallery {
 
       ul {
@@ -45,7 +45,7 @@ main {
       }
     }
   }
-
+}
   .back_colorbox {
     position: fixed;
     top: 0;
@@ -53,7 +53,7 @@ main {
     right: 0;
     bottom: 0;
     margin: auto;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     z-index: 9;
     display: none;
   }
@@ -68,4 +68,3 @@ main {
     display: none;
     z-index: 10;
   }
-}
