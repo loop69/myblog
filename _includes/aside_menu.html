@@ -1,0 +1,13 @@
+{% for item in site.menu %}
+{% if page.url == {{item.url}} %}
+    {% if item.submenu %}
+    <ul class="submenu">
+        {% for subitem in item.submenu %}
+        <li>
+            <a href="{{subitem.url}}">{{subitem.name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endif %}
+{% endfor %}
