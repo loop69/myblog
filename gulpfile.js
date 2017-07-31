@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const exec = require('child_process').exec;
 const bs = require('browser-sync').create();
 const sass = require('gulp-sass');
+//const babel = require("gulp-babel");
 
 const path = {
     html: ['*.html', '_includes/*.html', '_layouts/*.html'],
@@ -51,6 +52,16 @@ gulp.task('sass', function(){
         .pipe(gulp.dest('assets/styles/'))
 });
 
+/* попытка подключить babel */
+
+/*gulp.task("babel", function () {
+    return gulp.src("assets/js/!*.js")
+        .pipe(babel())
+        .pipe(gulp.dest("_site/assets/js/"))
+        .pipe(bs.stream())
+        .pipe(gulp.dest('assets/js/'));
+});*/
+
 // следить за изменениями исходных файлов и перезапускать сервер и сборку нашего сайта
 
 gulp.task('jekyll:rebuild', ['jekyll:build'], function(){
@@ -60,6 +71,7 @@ gulp.task('jekyll:rebuild', ['jekyll:build'], function(){
 gulp.task('watch', function() {
     gulp.watch( path.html, ['jekyll:rebuild']);
     gulp.watch( path.scss, ['sass']);
+    //gulp.watch( path.js, ['babel']);
     gulp.watch( path.js, ['jekyll:rebuild']);
     gulp.watch( path.css, ['jekyll:rebuild']);
 });

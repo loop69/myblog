@@ -61,7 +61,7 @@ layout: default
                 oldNum = pal;
             }
 
-            document.querySelector('.answer').innerHTML = `<p> в указанном диапазоне обнаружены следующие палиндромы: ${arr.join(";")} </p>`;
+            document.querySelector('.answer').innerHTML = '<p> в указанном диапазоне обнаружены следующие палиндромы:<pre>' + arr.join("<br />") + '</pre></p>';
         }
 
 

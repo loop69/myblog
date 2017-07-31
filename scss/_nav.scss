@@ -6,8 +6,6 @@
     //margin-right: 5px;
     position: relative;
 
-
-
     &:hover > .submenu{
       visibility: visible;
     }
@@ -16,24 +14,19 @@
       text-decoration: none;
       color: $brown;
       padding: 3px 8px;
-
+      transition: 0.5s all ease;
       &:hover {
         color: rgba($beige, .8);
         background: $brown;
+
       }
-
     }
-
-
   }
-
-
 
   .submenu {
     position: absolute;
     visibility: hidden;
     background: $beige;
-    width: auto;
     padding: 3px;
 
     @media screen and (max-width: 1100px) {
@@ -43,11 +36,22 @@
 
 
     li {
-      margin: 0;
+     // margin: 0;
       font-size: 18px;
+      width: 100%;
      // display: block;
     }
-  }
+
+
+    }
+
+  .submenu li > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 5px 1px;
+    }
+
 }
 
 .active {
