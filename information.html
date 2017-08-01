@@ -71,6 +71,7 @@ layout: default
     <script> // таблица умножения
 
         let table = document.createElement("table");
+        table.style = "width: 60%; height: 60%; text-align: center; line-height: 100%";
 
         for(let i = 1; i <=10; i++) {
             let tr = document.createElement("tr");
@@ -92,6 +93,12 @@ layout: default
         art.appendChild(p);
 
         art.appendChild(table);
+        table.firstElementChild.style = "background: white";
+
+        let tabtr = document.querySelectorAll("tr");
+
+        for (let t of tabtr)
+            t.firstElementChild.style = "background: white";
 
     </script>
 </main>

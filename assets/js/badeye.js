@@ -56,10 +56,30 @@ function Hide() {
 
     let images = document.querySelectorAll('img');
 
-    for (let node of images) {
+    let _iteratorNormalCompletion = true;
+    let _didIteratorError = false;
+    let _iteratorError = undefined;
 
-        if (node.nodeType === 1) node.classList.toggle('hide');
+    try {
+        for (let _iterator = images[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            let node = _step.value;
 
+
+            if (node.nodeType === 1) node.classList.toggle('hide');
+        }
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion && _iterator.return) {
+                _iterator.return();
+            }
+        } finally {
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
     }
 
 
@@ -69,8 +89,29 @@ function Hide() {
      let size = localStorage.getItem('size');
 
      let sm = document.querySelectorAll("nav, ul, li, div, p, footer");
-     for (let node of sm) {
-         if(node.nodeType === 1) node.style.fontSize = "large";
+     let _iteratorNormalCompletion = true;
+     let _didIteratorError = false;
+     let _iteratorError = undefined;
+
+     try {
+         for (let _iterator = sm[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+             let node = _step.value;
+
+             if (node.nodeType === 1) node.style.fontSize = "large";
+         }
+     } catch (err) {
+         _didIteratorError = true;
+         _iteratorError = err;
+     } finally {
+         try {
+             if (!_iteratorNormalCompletion && _iterator.return) {
+                 _iterator.return();
+             }
+         } finally {
+             if (_didIteratorError) {
+                 throw _iteratorError;
+             }
+         }
      }
      if (size) {localStorage.removeItem('size');}
      localStorage.setItem('size', 'large');
@@ -80,8 +121,29 @@ function Hide() {
      let size = localStorage.getItem('size');
 
      let md = document.querySelectorAll("nav, ul, li, div, p, footer");
-     for (let node of md) {
-         if(node.nodeType === 1) node.style.fontSize = "x-large";
+     let _iteratorNormalCompletion = true;
+     let _didIteratorError = false;
+     let _iteratorError = undefined;
+
+     try {
+         for (let _iterator = md[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+             let node = _step.value;
+
+             if (node.nodeType === 1) node.style.fontSize = "x-large";
+         }
+     } catch (err) {
+         _didIteratorError = true;
+         _iteratorError = err;
+     } finally {
+         try {
+             if (!_iteratorNormalCompletion && _iterator.return) {
+                 _iterator.return();
+             }
+         } finally {
+             if (_didIteratorError) {
+                 throw _iteratorError;
+             }
+         }
      }
 
      if (size) {localStorage.removeItem('size');}
@@ -92,9 +154,30 @@ function Hide() {
      let size = localStorage.getItem('size');
 
      let lg = document.querySelectorAll("nav, ul, li, div, p, footer");
-     console.log(lg);
-     for (let node of lg) {
-         if(node.nodeType === 1) node.style.fontSize = "xx-large";
+
+     let _iteratorNormalCompletion = true;
+     let _didIteratorError = false;
+     let _iteratorError = undefined;
+
+     try {
+         for (let _iterator = lg[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+             let node = _step.value;
+
+             if (node.nodeType === 1) node.style.fontSize = "xx-large";
+         }
+     } catch (err) {
+         _didIteratorError = true;
+         _iteratorError = err;
+     } finally {
+         try {
+             if (!_iteratorNormalCompletion && _iterator.return) {
+                 _iterator.return();
+             }
+         } finally {
+             if (_didIteratorError) {
+                 throw _iteratorError;
+             }
+         }
      }
      if (size) {localStorage.removeItem('size');}
      localStorage.setItem('size', 'xx-large');
