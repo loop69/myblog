@@ -56,152 +56,69 @@ function Hide() {
 
     let images = document.querySelectorAll('img');
 
-    let _iteratorNormalCompletion = true;
-    let _didIteratorError = false;
-    let _iteratorError = undefined;
+    for (let node of images) {
 
-    try {
-        for (let _iterator = images[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            let node = _step.value;
+        if (node.nodeType === 1) node.classList.toggle('hide');
 
-
-            if (node.nodeType === 1) node.classList.toggle('hide');
-        }
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
-        }
     }
 
 
 }
 
- function Normal() {
-     let size = localStorage.getItem('size');
+function Normal() {
+    let size = localStorage.getItem('size');
 
-     let sm = document.querySelectorAll("nav, ul, li, div, p, footer");
-     let _iteratorNormalCompletion = true;
-     let _didIteratorError = false;
-     let _iteratorError = undefined;
+    let sm = document.querySelectorAll("nav, ul, li, div, p, footer");
+    for (let node of sm) {
+        if(node.nodeType === 1) node.style.fontSize = "large";
+    }
+    if (size) {localStorage.removeItem('size');}
+    localStorage.setItem('size', 'large');
+}
 
-     try {
-         for (let _iterator = sm[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-             let node = _step.value;
+function Middle() {
+    let size = localStorage.getItem('size');
 
-             if (node.nodeType === 1) node.style.fontSize = "large";
-         }
-     } catch (err) {
-         _didIteratorError = true;
-         _iteratorError = err;
-     } finally {
-         try {
-             if (!_iteratorNormalCompletion && _iterator.return) {
-                 _iterator.return();
-             }
-         } finally {
-             if (_didIteratorError) {
-                 throw _iteratorError;
-             }
-         }
-     }
-     if (size) {localStorage.removeItem('size');}
-     localStorage.setItem('size', 'large');
- }
+    let md = document.querySelectorAll("nav, ul, li, div, p, footer");
+    for (let node of md) {
+        if(node.nodeType === 1) node.style.fontSize = "x-large";
+    }
 
- function Middle() {
-     let size = localStorage.getItem('size');
+    if (size) {localStorage.removeItem('size');}
+    localStorage.setItem('size', 'x-large');
+}
 
-     let md = document.querySelectorAll("nav, ul, li, div, p, footer");
-     let _iteratorNormalCompletion = true;
-     let _didIteratorError = false;
-     let _iteratorError = undefined;
+function Big() {
+    let size = localStorage.getItem('size');
 
-     try {
-         for (let _iterator = md[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-             let node = _step.value;
+    let lg = document.querySelectorAll("nav, ul, li, div, p, footer");
+    console.log(lg);
+    for (let node of lg) {
+        if(node.nodeType === 1) node.style.fontSize = "xx-large";
+    }
+    if (size) {localStorage.removeItem('size');}
+    localStorage.setItem('size', 'xx-large');
 
-             if (node.nodeType === 1) node.style.fontSize = "x-large";
-         }
-     } catch (err) {
-         _didIteratorError = true;
-         _iteratorError = err;
-     } finally {
-         try {
-             if (!_iteratorNormalCompletion && _iterator.return) {
-                 _iterator.return();
-             }
-         } finally {
-             if (_didIteratorError) {
-                 throw _iteratorError;
-             }
-         }
-     }
+}
 
-     if (size) {localStorage.removeItem('size');}
-     localStorage.setItem('size', 'x-large');
- }
+function Black() {
 
- function Big() {
-     let size = localStorage.getItem('size');
+    let black = localStorage.getItem('black');
 
-     let lg = document.querySelectorAll("nav, ul, li, div, p, footer");
-
-     let _iteratorNormalCompletion = true;
-     let _didIteratorError = false;
-     let _iteratorError = undefined;
-
-     try {
-         for (let _iterator = lg[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-             let node = _step.value;
-
-             if (node.nodeType === 1) node.style.fontSize = "xx-large";
-         }
-     } catch (err) {
-         _didIteratorError = true;
-         _iteratorError = err;
-     } finally {
-         try {
-             if (!_iteratorNormalCompletion && _iterator.return) {
-                 _iterator.return();
-             }
-         } finally {
-             if (_didIteratorError) {
-                 throw _iteratorError;
-             }
-         }
-     }
-     if (size) {localStorage.removeItem('size');}
-     localStorage.setItem('size', 'xx-large');
-
- }
-
- function Black() {
-
-     let black = localStorage.getItem('black');
-
-     backColor();
+    backColor();
 
 
-     ToggleButtonVal('fon-color', "чёрный", "белый");
+    ToggleButtonVal('fon-color', "чёрный", "белый");
 
-     if (!black) {
-         localStorage.setItem('black', 'black');
-     }
-     else {
-         localStorage.removeItem('black');
-     }
- }
+    if (!black) {
+        localStorage.setItem('black', 'black');
+    }
+    else {
+        localStorage.removeItem('black');
+    }
+}
 
- function Back() {
+function Back() {
 
     let badeye_cookie = getCookie('badeye');
 
@@ -211,38 +128,38 @@ function Hide() {
 
         window.location.reload();
     }
- }
+}
 
- function Badeye() {
+function Badeye() {
 
-     document.cookie = "badeye = yes; path = /";
+    document.cookie = "badeye = yes; path = /";
 
-     document.getElementById("badeye").classList.toggle('visible');
-     document.getElementById("tobadeye").classList.toggle('unvisible');
+    document.getElementById("badeye").classList.toggle('visible');
+    document.getElementById("tobadeye").classList.toggle('unvisible');
 
-     let size = localStorage.getItem("size");
-     let black = localStorage.getItem("black");
-     let hide = localStorage.getItem("hide");
+    let size = localStorage.getItem("size");
+    let black = localStorage.getItem("black");
+    let hide = localStorage.getItem("hide");
 
-     let font_size = document.querySelectorAll("nav, ul, li, div, p, footer");
-     for (let i = 0; i < font_size.length; i++) {
-         font_size[i].style.fontSize = size;
-     }
+    let font_size = document.querySelectorAll("nav, ul, li, div, p, footer");
+    for (let i = 0; i < font_size.length; i++) {
+        font_size[i].style.fontSize = size;
+    }
 
-     if (black) {
-         backColor();
-         ToggleButtonVal('fon-color', "чёрный", "белый");
-     }
+    if (black) {
+        backColor();
+        ToggleButtonVal('fon-color', "чёрный", "белый");
+    }
 
-     if (hide) {
-         ToggleButtonVal('hide-img', 'скрыть', 'показать');
-         let images = document.querySelectorAll('img');
+    if (hide) {
+        ToggleButtonVal('hide-img', 'скрыть', 'показать');
+        let images = document.querySelectorAll('img');
 
-         for (let i = 0; i < images.length; i++) {
-             images[i].classList.toggle('hide');
-         }
-     }
- }
+        for (let i = 0; i < images.length; i++) {
+            images[i].classList.toggle('hide');
+        }
+    }
+}
 
 function getCookie(name) {
 
@@ -279,27 +196,27 @@ function  ToggleButtonVal(id, first, second) {
 
     let first_val = first;
 
-   // console.log(button);
+    // console.log(button);
 
-        if (button.innerHTML === first_val) {
+    if (button.innerHTML === first_val) {
 
-            button.innerHTML = second;
+        button.innerHTML = second;
 
-        }
-        else {
+    }
+    else {
 
-            button.innerHTML = first_val;
+        button.innerHTML = first_val;
 
-        }
+    }
 
 }
 
 function backColor() {
-   // let header = document.querySelector('header');
+    // let header = document.querySelector('header');
     let body = document.querySelector('body');
     let footer = document.querySelector('footer');
 
-  //  header.classList.toggle('black');
+    //  header.classList.toggle('black');
     body.classList.toggle('black');
     footer.classList.toggle('black');
 }
@@ -308,22 +225,22 @@ function backColor() {
 //получаем эелементы кнопок и вешаем обработчики onclick
 
 let tb = document.getElementById("tobadeye");
-    tb.addEventListener("click", Badeye);
+tb.addEventListener("click", Badeye);
 
 let fontNormal = document.getElementById("font_normal");
-    fontNormal.addEventListener("click", Normal);
+fontNormal.addEventListener("click", Normal);
 
 let fontMiddle = document.getElementById("font_middle");
-    fontMiddle.addEventListener("click", Middle);
+fontMiddle.addEventListener("click", Middle);
 
 let fontBig = document.getElementById("font_big");
-    fontBig.addEventListener("click", Big);
+fontBig.addEventListener("click", Big);
 
 let fonColor = document.getElementById("fon-color");
-    fonColor.addEventListener("click", Black);
+fonColor.addEventListener("click", Black);
 
 let hideImg = document.getElementById("hide-img");
-    hideImg.addEventListener("click", Hide);
+hideImg.addEventListener("click", Hide);
 
 let back = document.getElementById("back");
-    back.addEventListener("click", Back);
+back.addEventListener("click", Back);
