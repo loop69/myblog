@@ -12,22 +12,18 @@ layout: default
 
     <article class="palindrom">
 
-        <p>Определить числа палиндромы в диапазоне</p>
+        <h3>Определить числа палиндромы в диапазоне</h3>
 
 
             <label for="pal">от</label><input id="pal" size="6">
 
-
             <label for="palend">до</label><input id="palend" size="6">
 
-
-        <div>
-        <input type="button" id="dopal" value="палиндромнуть">
-        </div>
+            <input type="button" id="dopal" value="палиндромнуть">
 
         <div class="answer"></div>
 
-    </article>
+
 
 
 
@@ -86,11 +82,11 @@ layout: default
 
         let art = document.querySelector(".palindrom");
 
-        let p = document.createElement("p");
+        let h3 = document.createElement("h3");
 
-        p.appendChild(document.createTextNode("Таблица умножения"));
+        h3.appendChild(document.createTextNode("Таблица умножения"));
 
-        art.appendChild(p);
+        art.appendChild(h3);
 
         art.appendChild(table);
         table.firstElementChild.style = "background: white";
@@ -101,4 +97,6 @@ layout: default
             t.firstElementChild.style = "background: white";
 
     </script>
+
+    </article>
 </main>

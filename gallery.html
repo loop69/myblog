@@ -1,26 +1,37 @@
 ---
-permalink: gallery/
 layout: default
+permalink: gallery/
 ---
 <main class="gallery">
-<h1>Галлерея</h1>
+<div class="grid-sizer"></div>
+
+    {% for img in site.data.gallery %}
+    <div class="grid-item">
+        <img src="/assets/js/spin.gif" data-original="{{img}}" alt="">
+    </div>
+    {% endfor %}
+
+    <script src="/assets/js/jquery.lazyload.js"></script>
+    <script src="/assets/js/masonry.pkgd.js"></script>
 
     <script>
+        let images = $('img');
+        let grid = $('main.gallery');
 
-        function Triangle(h, w, color) {
-            this.htmlCode = `<div style="border: ${h}px solid transparent; \
-                                         border-bottom: ${w}px solid ${color};\
-                                         width: 0; \
-                                         height: 100px;\
-                                             "></div>`;
+        grid.masonry({
+           itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: 5,
+            percentPosition: true
 
-            this.show = function () {
-                document.write(this.htmlCode);
+        });
+        images.lazyload({
+            effect: "fadeIn",
+            load: function () {
+                grid.masonry('layout');
             }
-        }
-
-        let triangle = new Triangle(100, 100, "red");
-        triangle.show();
-
+        });
     </script>
+
 </main>
+

@@ -10,6 +10,7 @@ const path = {
     scss: 'scss/**/*.scss',
     js: 'assets/js/*.js',
     css: 'assets/styles/*.css',
+    config: ['_config.yml', '_data/*.yml']
 }
 
 // 1. Выполнить команду jekyll build

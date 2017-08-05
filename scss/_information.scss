@@ -12,7 +12,7 @@ main.info {
 
   .side_menu {
     width: 25%;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 
     .submenu li {
       margin: 5px 3px;
@@ -38,7 +38,28 @@ main.info {
     width: 74%;
     border: 1px solid $brown;
     /*box-shadow: 0 0 8px rgba(4, 4, 4, .6);*/
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    height: auto;
+
+    #dopal {
+      display: inline-block;
+      width: 170px;
+      height: 45px;
+      padding: 3px;
+      font-size: 20px;
+    }
+
+    #pal{
+      height: 35px;
+      font-size: 20px;
+    }
+    #palend{
+      height: 35px;
+      font-size: 20px;
+    }
+    .answer{
+      margin-bottom: 50px;
+    }
   }
 
   /*@media screen and (min-width: 980px) {

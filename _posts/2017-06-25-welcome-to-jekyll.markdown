@@ -13,6 +13,40 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
+{% highlight javascript %}
+       let table = document.createElement("table");
+            table.style = "width: 60%; height: 60%; text-align: center; line-height: 100%";
+
+            for(let i = 1; i <=10; i++) {
+                let tr = document.createElement("tr");
+
+                for(let j = 1; j <=10; j++) {
+                    let td = document.createElement("td");
+                    td.appendChild(document.createTextNode(i * j));
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+            }
+
+            let art = document.querySelector(".palindrom");
+
+            let h3 = document.createElement("h3");
+
+            h3.appendChild(document.createTextNode("Таблица умножения"));
+
+            art.appendChild(h3);
+
+            art.appendChild(table);
+            table.firstElementChild.style = "background: white";
+
+            let tabtr = document.querySelectorAll("tr");
+
+            for (let t of tabtr)
+                t.firstElementChild.style = "background: white";
+{% endhighlight %}
+
+ 
+
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
