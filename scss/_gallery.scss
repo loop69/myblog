@@ -35,9 +35,13 @@ main.gallery{
   .grid-item{
     float: left;
     margin-bottom: 5px;
+
   }
   img{
     width: 100%;
-
+    border: 10px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(4,4,4, .5);
+    margin-left: 5px;
   }
 }

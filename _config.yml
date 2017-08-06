@@ -34,3 +34,11 @@ exclude:
  - gulpfile.js
  - node_modules
  - scss
+
+collections:
+  news:
+    output: true
+    permalink: /news/:title/
+
+  information_oo:
+    output: true

@@ -1,20 +1,22 @@
-- /assets/images/gal/g1.jpg
-- /assets/images/gal/g2.jpg
-- /assets/images/gal/g3.jpg
-- /assets/images/gal/g4.jpg
-- /assets/images/gal/g5.jpg
-- /assets/images/gal/g6.jpg
-- /assets/images/gal/g7.jpg
-- /assets/images/gal/g8.jpg
-- /assets/images/gal/g9.jpg
-- /assets/images/gal/g10.jpg
-- /assets/images/gal/g11.jpg
-- /assets/images/gal/g12.jpg
-- /assets/images/gal/g13.jpg
-- /assets/images/gal/g14.jpg
-- /assets/images/gal/g15.jpg
-- /assets/images/gal/g16.jpg
-- /assets/images/gal/g17.jpg
-- /assets/images/gal/g18.jpg
-- /assets/images/gal/g19.jpg
-- /assets/images/gal/g20.jpg
+all-in:
+  urls:
+    - /assets/images/gal/g1.jpg
+    - /assets/images/gal/g2.jpg
+    - /assets/images/gal/g3.jpg
+    - /assets/images/gal/g4.jpg
+    - /assets/images/gal/g5.jpg
+    - /assets/images/gal/g6.jpg
+    - /assets/images/gal/g7.jpg
+    - /assets/images/gal/g8.jpg
+    - /assets/images/gal/g9.jpg
+    - /assets/images/gal/g10.jpg
+    - /assets/images/gal/g11.jpg
+    - /assets/images/gal/g12.jpg
+    - /assets/images/gal/g13.jpg
+    - /assets/images/gal/g14.jpg
+    - /assets/images/gal/g15.jpg
+    - /assets/images/gal/g16.jpg
+    - /assets/images/gal/g17.jpg
+    - /assets/images/gal/g18.jpg
+    - /assets/images/gal/g19.jpg
+    - /assets/images/gal/g20.jpg

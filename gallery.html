@@ -5,7 +5,7 @@ permalink: gallery/
 <main class="gallery">
 <div class="grid-sizer"></div>
 
-    {% for img in site.data.gallery %}
+    {% for img in site.data.gallery.all-in.urls %}
     <div class="grid-item">
         <img src="/assets/images/drawing.svg" data-original="{{img}}" alt="">
     </div>
@@ -19,7 +19,7 @@ permalink: gallery/
         let grid = $('main.gallery');
 
         grid.masonry({
-           itemSelector: '.grid-item',
+            itemSelector: '.grid-item',
             columnWidth: '.grid-sizer',
             gutter: 5,
             percentPosition: true

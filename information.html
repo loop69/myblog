@@ -2,101 +2,47 @@
 permalink: information/
 layout: default
 ---
-<h1>Сведения</h1>
-
 <main class="info">
 
-    <div class="side_menu">
-        {% include aside_menu.html %}
-    </div>
+  <aside class="info_title">
+      <ul>
+          {% for info in site.information_oo %}
+          <li>{{info.title}}</li>
+          {% endfor %}
+      </ul>
+  </aside>
+    <section class="info_content">
+        {% for info in site.information_oo %}
 
-    <article class="palindrom">
+            <div id="{{info.title}}" class="content_item">
+                <h2>{{info.title}}</h2>
+                {{info.content}}
+            </div>
 
-        <h3>Определить числа палиндромы в диапазоне</h3>
-
-
-            <label for="pal">от</label><input id="pal" size="6">
-
-            <label for="palend">до</label><input id="palend" size="6">
-
-            <input type="button" id="dopal" value="палиндромнуть">
-
-        <div class="answer"></div>
-
-
-
-
-
-    <script> // вычисление чисел палиндромов
-
-        let dopal = document.getElementById('dopal');
-
-        dopal.addEventListener('click', getPal);
-
-        function getPal() {
-            let pal = Number(document.getElementById('pal').value);
-            let palend = Number(document.getElementById('palend').value);
-            let arr = [];
-
-            for (let i = pal; i <= palend; i++) {
-
-                let oldNum = pal;
-                let newNum = 0;
-
-                while (pal > 0) {
-
-                    newNum = newNum * 10 + pal % 10;
-
-                    pal = parseInt(pal / 10);
-
-                }
-
-                if (oldNum === newNum) { arr.push(newNum); }
-
-                pal = oldNum + 1;
-                oldNum = pal;
-            }
-
-            document.querySelector('.answer').innerHTML = '<p> в указанном диапазоне обнаружены следующие палиндромы:<pre>' + arr.join("<br />") + '</pre></p>';
-        }
-
-
-    </script>
-
-
-    <script> // таблица умножения
-
-        let table = document.createElement("table");
-        table.style = "width: 60%; height: 60%; text-align: center; line-height: 100%";
-
-        for(let i = 1; i <=10; i++) {
-            let tr = document.createElement("tr");
-
-            for(let j = 1; j <=10; j++) {
-                let td = document.createElement("td");
-                td.appendChild(document.createTextNode(i * j));
-                tr.appendChild(td);
-            }
-            table.appendChild(tr);
-        }
-
-        let art = document.querySelector(".palindrom");
-
-        let h3 = document.createElement("h3");
-
-        h3.appendChild(document.createTextNode("Таблица умножения"));
-
-        art.appendChild(h3);
-
-        art.appendChild(table);
-        table.firstElementChild.style = "background: white";
-
-        let tabtr = document.querySelectorAll("tr");
-
-        for (let t of tabtr)
-            t.firstElementChild.style = "background: white";
-
-    </script>
-
-    </article>
+        {% endfor %}
+    </section>
 </main>
+
+<script>
+    let aside = document.getElementsByTagName('aside');
+    let anchors = aside[0].getElementsByTagName('li');
+    let items = document.getElementsByClassName('content_item');
+
+    let curr_item = items[0];
+    curr_item.style.display = 'block';
+
+    Array.prototype.forEach.call(anchors, anchor => {
+
+        anchor.onclick = function (event) {
+
+            if(!event.hasOwnProperty(curr_item)) {
+                curr_item.style.display = 'none';
+                curr_item = items[anchor.innerHTML];
+                curr_item.style.display = 'block';
+
+            }
+        };
+
+
+    });
+</script>
