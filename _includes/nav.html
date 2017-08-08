@@ -1,4 +1,4 @@
- <nav class="{{ include.class}}">
+ <nav class="{{ include.class }}">
      <ul>
     {% for item in site.menu %}
         <li class="{% if page.url == {{item.url}} %} active {% endif %}"><a href="{{item.url}}">{{item.name}}</a>
@@ -16,3 +16,4 @@
       </ul>
  </nav>
 <div class="sand_button"></div>
+ <script src="/assets/js/adaptive_menu.js"></script>

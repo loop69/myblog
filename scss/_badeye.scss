@@ -22,6 +22,13 @@ label.label {
   cursor: pointer;
   width:250px;
   height: 60px;
+  @media screen and (max-width: 525px) {
+
+      position: absolute;
+      top: 2px;
+      right: 2px;
+
+  }
 }
 
 .badeye {
@@ -86,3 +93,4 @@ div.badeye div.w-b button {
   height: 74px;
   cursor: pointer;
 }
+

@@ -21,32 +21,45 @@
 
       }
     }
-    .sand_button{
+    /*.sand_button{
       width: 32px;
       height: 32px;
       background: url("/assets/images/sand_menu.png") no-repeat center/cover;
       display: none;
-    }
+    }*/
 
-    @media screen and (max-width: 525px) {
-      width: 100%;
-      display: block;
-      border-bottom: 2px solid $brown;
-      visibility: hidden;
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 5px 1px;
-        transition: 0s;
-      }
-      .sand_button{
-        display: block;
-      }
 
-    }
   }
 
+  @media screen and (max-width: 525px) {
+    width: 100%;
+    display: none;
+    transition: all 1s;
+    margin-top: 80px;
+
+
+
+    ul {
+      padding: 0;
+
+
+      li {
+        display: block;
+        border-bottom: 2px solid $brown;
+        text-align: center;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 5px 1px;
+          transition: 0s;
+        }
+      }
+    }
+
+
+  }
   .submenu {
     position: absolute;
     visibility: hidden;
@@ -84,3 +97,36 @@
   border: 0.5px solid $brown;
 }
 
+.mobile-menu-toggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  @media screen and (min-width: 526px){
+    display: none;
+  }
+
+  span,
+  span::before,
+  span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: $brown;
+    position: relative;
+  }
+  span{
+    top:10px;
+  }
+  span::before{
+    top: 10px;
+  }
+  span::after{
+    top: 17px;
+  }
+}
