@@ -1,6 +1,34 @@
+menu_main:
+ - url: /news/
+   name: Новости
+ - url: /gallery/
+   name: Галлерея
+ - url: /tests/
+   name: Тесты
+ - url: /contacts/
+   name: Контакты
+ - url: /information/
+   name: Сведения об образовательной организации
+   submenu:
+     - url: #
+       name: Основные сведения
+     - url: #
+       name: Структура и органы управления
+     - url: #
+       name: Документы
+     - url: #
+       name: Руководство. Педагогический состав
+     - url: #
+       name: Образовательные стандарты
+     - url: #
+       name: График работы
+     - url: #
+       name: Меры социальной поддержки
+     - url: #
+       name: Платные услуги
 menu:
  - url: /
-   name: Главная
+   name: Школа-интернат №48
  - url: /news/
    name: Новости
  - url: /gallery/
