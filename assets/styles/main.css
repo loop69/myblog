@@ -132,7 +132,7 @@ main {
       color: rgba(209, 188, 138, 0.8);
       background: #80542F; }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 720px) {
   .menu-top {
     width: 100%;
     display: none;
@@ -182,7 +182,7 @@ main {
   position: absolute;
   top: 2px;
   left: 2px; }
-  @media screen and (min-width: 526px) {
+  @media screen and (min-width: 721px) {
     .mobile-menu-toggle {
       display: none; } }
   .mobile-menu-toggle span,

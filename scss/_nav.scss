@@ -31,7 +31,7 @@
 
   }
 
-  @media screen and (max-width: 525px) {
+  @media screen and (max-width: 720px) {
     width: 100%;
     display: none;
     transition: all 1s;
@@ -107,7 +107,7 @@
   top: 2px;
   left: 2px;
 
-  @media screen and (min-width: 526px){
+  @media screen and (min-width: 721px){
     display: none;
   }
 
